@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="seo-title">Contact — SparkClean</title>
+  <meta id="seo-description" name="description" content="" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">SparkClean</a>
+    <nav aria-label="Main">
+      <a href="/index.html" data-nav>Home</a>
+      <a href="/services.html" data-nav>Services</a>
+      <a href="/contact.html" data-nav aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main id="contact">
+    <h1 class="page-title">Contact Us</h1>
+    <p id="contact-intro"></p>
+
+    <div class="contact-grid">
+      <div>
+        <h2>Get in touch</h2>
+        <p><strong>Address:</strong> <span id="contact-address"></span></p>
+        <p><strong>Phone:</strong> <a id="contact-phone"></a></p>
+        <p><strong>Email:</strong> <a id="contact-email"></a></p>
+        <h3>Business Hours</h3>
+        <ul id="contact-hours"></ul>
+      </div>
+
+      <!-- Netlify-ready form (no backend needed) -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+        <p>
+          <label>Name <input type="text" name="name" required /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" required /></label>
+        </p>
+        <p>
+          <label>Message <textarea name="message" rows="5" required></textarea></label>
+        </p>
+        <p><button class="btn" type="submit">Send</button></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> SparkClean</p>
+  </footer>
+
+  <script src="/assets/js/nav.js" defer></script>
+  <script src="/assets/js/content.js" defer></script>
+  <script>window.__PAGE__ = "contact";</script>
+</body>
+</html>

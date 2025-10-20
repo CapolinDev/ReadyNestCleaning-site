@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "home"
+    label: "Home Page"
+    delete: false
+    files:
+      - label: "Home Content"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          - { label: "SEO Title", name: "seo.title", widget: "string" }
+          - { label: "SEO Description", name: "seo.description", widget: "text" }
+          - { label: "Hero Heading", name: "hero.heading", widget: "string" }
+          - { label: "Hero Subheading", name: "hero.subheading", widget: "text" }
+          - { label: "Hero CTA Text", name: "hero.ctaText", widget: "string" }
+          - { label: "Hero CTA Link", name: "hero.ctaLink", widget: "string" }
+          - label: "Features"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Quote", name: "quote", widget: "text" }
+
+  - name: "services"
+    label: "Services Page"
+    delete: false
+    files:
+      - label: "Services Content"
+        name: "services"
+        file: "content/services.json"
+        fields:
+          - { label: "SEO Title", name: "seo.title", widget: "string" }
+          - { label: "SEO Description", name: "seo.description", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Price Range", name: "priceRange", widget: "string" }
+              - label: "Bullets"
+                name: "bullets"
+                widget: "list"
+                field: { label: "Bullet", name: "bullet", widget: "string" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+
+  - name: "contact"
+    label: "Contact Page"
+    delete: false
+    files:
+      - label: "Contact Content"
+        name: "contact"
+        file: "content/contact.json"
+        fields:
+          - { label: "SEO Title", name: "seo.title", widget: "string" }
+          - { label: "SEO Description", name: "seo.description", widget: "text" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - label: "Business Hours"
+            name: "businessHours"
+            widget: "list"
+            field: { label: "Line", name: "line", widget: "string" }

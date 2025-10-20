@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "title": "Services — SparkClean",
+    "description": "Home cleaning, office cleaning, move-in/out, deep cleaning."
+  },
+  "intro": "Choose from our most popular packages or request a custom quote.",
+  "services": [
+    {
+      "name": "Standard Home Cleaning",
+      "summary": "Dusting, vacuuming, kitchen & bathroom wipe-down.",
+      "priceRange": "$90-$160",
+      "bullets": ["2-3 hours", "Kitchen & bath", "Floors & surfaces"]
+    },
+    {
+      "name": "Deep Cleaning",
+      "summary": "Baseboards, inside appliances, detailed bathrooms and kitchen.",
+      "priceRange": "$180-$300",
+      "bullets": ["4-6 hours", "Inside oven/fridge", "Detailing"]
+    },
+    {
+      "name": "Move-in/Move-out",
+      "summary": "Empty home deep clean to make it spotless.",
+      "priceRange": "$220-$400",
+      "bullets": ["Cabinets inside", "Windows (interior)", "Fixtures"]
+    }
+  ],
+  "cta": { "text": "Request a quote", "link": "/contact.html" }
+}
