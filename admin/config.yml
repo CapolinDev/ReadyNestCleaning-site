@@ -1,13 +1,22 @@
 backend:
+  # We'll use Netlify Identity + Git Gateway after deploy.
   name: git-gateway
   branch: main
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "images"      # where files are stored in the repo
+public_folder: "/images"    # how files are referenced by the site
 
+# Optional: draft/review/publish flow; remove if you want instant publish.
 publish_mode: editorial_workflow
 
+# Optional: slug style for new entries (we don't create new pages here, so it's moot)
+slug:
+  encoding: "unicode"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 collections:
+  # Home page JSON (content/home.json)
   - name: "home"
     label: "Home Page"
     delete: false
@@ -16,12 +25,20 @@ collections:
         name: "home"
         file: "content/home.json"
         fields:
-          - { label: "SEO Title", name: "seo.title", widget: "string" }
-          - { label: "SEO Description", name: "seo.description", widget: "text" }
-          - { label: "Hero Heading", name: "hero.heading", widget: "string" }
-          - { label: "Hero Subheading", name: "hero.subheading", widget: "text" }
-          - { label: "Hero CTA Text", name: "hero.ctaText", widget: "string" }
-          - { label: "Hero CTA Link", name: "hero.ctaLink", widget: "string" }
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+              - { label: "CTA Link", name: "ctaLink", widget: "string" }
           - label: "Features"
             name: "features"
             widget: "list"
@@ -35,6 +52,7 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Quote", name: "quote", widget: "text" }
 
+  # Services page JSON (content/services.json)
   - name: "services"
     label: "Services Page"
     delete: false
@@ -43,8 +61,12 @@ collections:
         name: "services"
         file: "content/services.json"
         fields:
-          - { label: "SEO Title", name: "seo.title", widget: "string" }
-          - { label: "SEO Description", name: "seo.description", widget: "text" }
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
           - { label: "Intro", name: "intro", widget: "text" }
           - label: "Services"
             name: "services"
@@ -64,6 +86,7 @@ collections:
               - { label: "Text", name: "text", widget: "string" }
               - { label: "Link", name: "link", widget: "string" }
 
+  # Contact page JSON (content/contact.json)
   - name: "contact"
     label: "Contact Page"
     delete: false
@@ -72,8 +95,12 @@ collections:
         name: "contact"
         file: "content/contact.json"
         fields:
-          - { label: "SEO Title", name: "seo.title", widget: "string" }
-          - { label: "SEO Description", name: "seo.description", widget: "text" }
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
           - { label: "Intro", name: "intro", widget: "text" }
           - { label: "Address", name: "address", widget: "string" }
           - { label: "Phone", name: "phone", widget: "string" }

@@ -1,21 +1,48 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Content Manager</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; }
+    .gate { display: grid; place-items: center; min-height: 100vh; gap: 12px; }
+    .btn { padding: 10px 16px; border: 1px solid #111; border-radius: 6px; background: #fff; cursor: pointer; }
+  </style>
 </head>
 <body>
-  <!-- Decap CMS -->
+  <!-- Decap CMS bundle -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
-  <!-- Optional: Netlify Identity widget for smoother login -->
+  <!-- Netlify Identity widget (for login once deployed to Netlify) -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <!-- Optional: gentle gate—if not logged, show a login button (works on Netlify) -->
+  <div class="gate" id="gate" style="display:none">
+    <h1>Content Manager</h1>
+    <p>You need to sign in to edit the site content.</p>
+    <button class="btn" id="loginBtn">Log in with Netlify Identity</button>
+  </div>
+
   <script>
+    // This gate helps non-technical editors find the login flow.
+    // Locally, the CMS will load but saving requires Netlify Identity + Git Gateway (next phase).
+    function showGate() {
+      var gate = document.getElementById('gate');
+      if (gate) gate.style.display = 'grid';
+    }
     if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) window.netlifyIdentity.on("login", () => document.location.reload());
+      window.netlifyIdentity.on('init', user => {
+        if (!user) {
+          showGate();
+          var btn = document.getElementById('loginBtn');
+          if (btn) btn.onclick = () => window.netlifyIdentity.open();
+          window.netlifyIdentity.on('login', () => document.location.reload());
+        }
       });
+    } else {
+      // If Identity widget isn't present (local), just show CMS directly.
     }
   </script>
 </body>
