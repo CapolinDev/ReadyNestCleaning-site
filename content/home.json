@@ -4,18 +4,33 @@
     "description": "Reliable, affordable cleaning services. One-time, weekly, bi-weekly."
   },
   "hero": {
-    "heading": "A spotless space, every time (LOCAL TESTttt)",
+    "heading": "A spotless space, every time (LOCAL TESTt)",
     "subheading": "Trusted cleaning for homes & offices",
     "ctaText": "Get a free quote",
     "ctaLink": "/contact.html"
   },
   "features": [
-    { "title": "Bonded & insured", "text": "Your peace of mind, guaranteed." },
-    { "title": "Eco-friendly products", "text": "Safer for your family and pets." },
-    { "title": "Flexible scheduling", "text": "One-time, weekly, or bi-weekly." }
+    {
+      "title": "Bonded & insured",
+      "text": "Your peace of mind, guaranteed."
+    },
+    {
+      "title": "Eco-friendly products",
+      "text": "Safer for your family and pets."
+    },
+    {
+      "title": "Flexible scheduling",
+      "text": "One-time, weekly, or bi-weekly."
+    }
   ],
   "testimonials": [
-    { "name": "Alex R.", "quote": "They did a fantastic job—kitchen looks new!" },
-    { "name": "Priya S.", "quote": "On time, professional, and thorough." }
+    {
+      "name": "Alex R.",
+      "quote": "They did a fantastic job—kitchen looks new!"
+    },
+    {
+      "name": "Priya S.",
+      "quote": "On time, professional, and thorough."
+    }
   ]
 }
