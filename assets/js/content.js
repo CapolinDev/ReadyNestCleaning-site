@@ -36,7 +36,7 @@
       if (grid && Array.isArray(data.services)) {
         grid.innerHTML = data.services.map(s => `
           <article class="card">
-            <h3>${s.name}</h3>
+            <h3>${s.name} ${s.badge ? `<small class="badge">${s.badge}</small>` : ""}</h3>
             <p>${s.summary}</p>
             <p><strong>${s.priceRange}</strong></p>
             ${s.bullets?.length ? `<ul>${s.bullets.map(b => `<li>${b}</li>`).join("")}</ul>` : ""}
