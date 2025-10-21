@@ -1,15 +1,15 @@
 {
   "seo": {
-    "title": "Contact — SparkClean",
+    "title": "Contact — ReadyNest",
     "description": "Request a quote or book a cleaning."
   },
   "intro": "Tell us about your space and preferred schedule. We’ll get back within 1 business day.",
   "address": "123 Main Street, Suite 200, Your City",
   "phone": "(555) 555-0123",
-  "email": "hello@sparkclean.example",
+  "email": "hello@ReadyNest.example",
   "businessHours": [
-    "Mon–Fri: 9:00–18:00",
-    "Sat: 10:00–16:00",
+    "Mon-Fri: 9:00-18:00",
+    "Sat: 10:00-16:00",
     "Sun: Closed"
   ]
 }
