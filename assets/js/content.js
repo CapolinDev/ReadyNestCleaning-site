@@ -14,7 +14,7 @@
       setText("cmshomebanner-heading", data.cmshomebanner?.heading);
       setText("cmshomebanner-subheading", data.cmshomebanner?.subheading);
 
-      
+
       setText("cmshomefeatures-cleantitle", data.cmshomefeatures?.cleantitle);
       setText("cmshomefeatures-cleantext", data.cmshomefeatures?.cleantext);
       setText("cmshomefeatures-fixtitle", data.cmshomefeatures?.fixtitle);
@@ -22,10 +22,10 @@
       setText("cmshomefeatures-alltitle", data.cmshomefeatures?.alltitle);
       setText("cmshomefeatures-alltext", data.cmshomefeatures?.alltext);
 
-      
-      setText("cmshomepack-heading", data.cmshomepackages?.heading);
-      setText("cmshomepack-subheading", data.cmshomepackages?.subheading);
-      setText("cmshomepack-description", data.cmshomepackages?.description);
+
+      setText("cmshomepack-heading", data.cmshomepack?.heading);
+      setText("cmshomepack-subheading", data.cmshomepack?.subheading);
+      setText("cmshomepack-description", data.cmshomepack?.description);
 
       setText("cmshomepack-condotitle", data.cmshomepack?.condotitle);
       setInnerHtml("cmshomepack-condotasks", data.cmshomepack?.condotasks);
@@ -35,7 +35,7 @@
       setInnerHtml("cmshomepack-officetasks", data.cmshomepack?.officetasks);
       setText("cmshomepack-schooltitle", data.cmshomepack?.schooltitle);
       setInnerHtml("cmshomepack-schooltasks", data.cmshomepack?.schooltasks);
-      
+
       setText("cmshomesection2-heading", data.cmshomesection2?.heading);
       setText("cmshomesection2-subheading", data.cmshomesection2?.subheading);
       setText("cmshomesection2-paragraph1", data.cmshomesection2?.paragraph1);
@@ -44,7 +44,7 @@
       setText("cmshomecontact-address", data.cmshomecontact?.address);
       setText("cmshomecontact-phone", data.cmshomecontact?.phone);
       setText("cmshomecontact-email", data.cmshomecontact?.email);
-      
+
 
 
 
