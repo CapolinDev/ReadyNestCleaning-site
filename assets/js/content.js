@@ -3,6 +3,7 @@
   const byId = (id) => document.getElementById(id);
   const setText = (id, text) => { const el = byId(id); if (el) el.textContent = text || ""; };
   const setAttr = (id, attr, val) => { const el = byId(id); if (el) el.setAttribute(attr, val); };
+  const setInnerHtml = (id, text) => { const el = byId(id); if (el) el.innerHTML = text || ""; };
 
   const render = {
     home(data) {
@@ -10,6 +11,44 @@
         setText("seo-title", data.seo.title);
         setAttr("seo-description", "content", data.seo.description);
       }
+      setText("cmshomebanner-heading", data.cmshomebanner?.heading);
+      setText("cmshomebanner-subheading", data.cmshomebanner?.subheading);
+
+      
+      setText("cmshomefeatures-cleantitle", data.cmshomefeatures?.cleantitle);
+      setText("cmshomefeatures-cleantext", data.cmshomefeatures?.cleantext);
+      setText("cmshomefeatures-fixtitle", data.cmshomefeatures?.fixtitle);
+      setText("cmshomefeatures-fixtext", data.cmshomefeatures?.fixtext);
+      setText("cmshomefeatures-alltitle", data.cmshomefeatures?.alltitle);
+      setText("cmshomefeatures-alltext", data.cmshomefeatures?.alltext);
+
+      
+      setText("cmshomepack-heading", data.cmshomepackages?.heading);
+      setText("cmshomepack-subheading", data.cmshomepackages?.subheading);
+      setText("cmshomepack-description", data.cmshomepackages?.description);
+
+      setText("cmshomepack-condotitle", data.cmshomepack?.condotitle);
+      setInnerHtml("cmshomepack-condotasks", data.cmshomepack?.condotasks);
+      setText("cmshomepack-hometitle", data.cmshomepack?.hometitle);
+      setInnerHtml("cmshomepack-hometasks", data.cmshomepack?.hometasks);
+      setText("cmshomepack-officetitle", data.cmshomepack?.officetitle);
+      setInnerHtml("cmshomepack-officetasks", data.cmshomepack?.officetasks);
+      setText("cmshomepack-schooltitle", data.cmshomepack?.schooltitle);
+      setInnerHtml("cmshomepack-schooltasks", data.cmshomepack?.schooltasks);
+      
+      setText("cmshomesection2-heading", data.cmshomesection2?.heading);
+      setText("cmshomesection2-subheading", data.cmshomesection2?.subheading);
+      setText("cmshomesection2-paragraph1", data.cmshomesection2?.paragraph1);
+      setText("cmshomesection2-paragraph2", data.cmshomesection2?.paragraph2);
+
+      setText("cmshomecontact-address", data.cmshomecontact?.address);
+      setText("cmshomecontact-phone", data.cmshomecontact?.phone);
+      setText("cmshomecontact-email", data.cmshomecontact?.email);
+      
+
+
+
+
       setText("hero-heading", data.hero?.heading);
       setText("hero-subheading", data.hero?.subheading);
       const cta = byId("hero-cta");

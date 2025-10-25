@@ -3,6 +3,50 @@
     "title": "ReadyNest — Professional Home & Office Cleaning",
     "description": "Reliable, affordable cleaning services. One-time, weekly, bi-weekly."
   },
+  "cmshomebanner": {
+    "heading": "Welcome to ReadyNest",
+    "subheading":"Deep cleaning + Smart fix"
+  },
+
+  "cmshomefeatures": {
+    "cleantitle": "Deep cleaning",
+    "cleantext":"Our Deep Cleaning service follows a detailed process that guarantees a high standard restult that goes beyond expectations. We use top market products that meet your particular needs and our personnel has the experience and knowledge that exceed our top QA standards.",
+  
+    "fixtitle": "Smart Fix",
+    "fixtext":"Our Smart Fix packages, hobbitses wonder five parasites later here's approaching shieldmaiden. I will take the Ring to Mordor. Instilled nothing's traitors Garulf minds happy grows playing encampment much. Bearing fabled Samwise Gamgee cracked. Shelob's 40 armour.",
+  
+    "alltitle": "All in one",
+    "alltext":"At ReadyNest we take care of everything so you don't have to. From your condo, house, office, school. Peasants swore aim feast Hobbit's crash? Fellas owe Bolgers forward vaults birdsong. Bilbo Baggins maggoty volley esquire?"
+  },
+
+  "cmshomepack": {
+    "heading": "Now choose what works best for you!",
+    "subheading": "Have a look at our most popular packages",
+    "description": "May the blessings of Elves and Men and all Free Folk go with you. Rhudaur tricks covering owes git listen avail life. Bone ain't divine heavier choking Ent.",
+    "condotitle": "Condo",
+    "condotasks": "- Broom <br/>- Mop<br/>- Wipe<br/>- Vaccum<br/>",
+    "hometitle": "Home",
+    "hometasks": "- Broom <br/>- Mop<br/>- Wipe<br/>- Vaccum<br/>",
+    "officetitle": "Office",
+    "officetasks": "- Broom <br/>- Mop<br/>- Wipe<br/>- Vaccum<br/>",
+    "schooltitle": "School",
+    "schooltasks": "- Broom <br/>- Mop<br/>- Wipe<br/>- Vaccum<br/>"
+  },
+
+  "cmshomesection2": {
+    "heading": "One more section!",
+    "subheading": "Just in case we need it",
+    "paragraph1": "One more section for us to put on whatever we may need. We can also just remove this section if we don't really need it.",
+    "paragraph2": "Oversized odd survived bent plumbing offered clot-head's Hobbitses fool's? Poured unprotected. Dî small fought parts? Don't you leave him, Samwise Gamgee. King lot Eldar feared. Encouraging mirrors grieve tomato's Greenleaf noises strike rout slowly. Accept Ranger carcasses retribution oversized invited gongs no revenge enchanting! Hobbiton shaken banner necessary blame floor toil wheeled rests gems club. Nori stealth hole?"
+  },
+
+  "cmshomecontact": {
+    "address": "We serve the whole GTA!",
+    "phone": "647 . 996 . 9999  |  647 . 345 . 8888",
+    "email": "contact@readynest.ca"
+  },
+
+
   "hero": {
     "heading": "A spotless space, every time (LOCAL TESTt)",
     "subheading": "Trusted cleaning for homes & offices. Update from VS Code",

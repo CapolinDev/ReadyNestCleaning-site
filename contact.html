@@ -1,79 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
   <head>
+    <title>ReadyNest</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title id="seo-title">Contact — ReadyNest</title>
-    <meta id="seo-description" name="description" content="" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title id="seo-title">ReadyNest</title>
+    <meta id="seo-description" name="description" content="Cleaning services" />
+  <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <a class="logo" href="/">ReadyNest</a>
-      <nav aria-label="Main">
-        <a href="/index.html" data-nav>Home</a>
-        <a href="/services.html" data-nav>Services</a>
-        <a href="/contact.html" data-nav aria-current="page">Contact</a>
+  <body class="homepage is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="logo container" style="max-width: 83px;">
+          <div>
+            <h1><a href="index.html" id="logo"><img src="images/ready-nest-logo-home.jpg" ></a></h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li class="current"><a href="/contact.html">Contact</a></li>
+        </ul>
       </nav>
-    </header>
+    </div>
+    <!-- Main -->
+      <div class="container">
 
-    <main id="contact">
-      <h1 class="page-title">Contact Us</h1>
-      <p id="contact-intro"></p>
+              <!-- Highlight -->
+              <section class="box general">
+				<header>
+                  <h2>Get in touch now!</h2>
+                  <p>
+                    We are glad to help you 
+                  </p>
+                </header>
 
-      <div class="contact-grid">
-        <div>
-          <h2>Get in touch</h2>
-          <p><strong>Address:</strong> <span id="contact-address"></span></p>
-          <p><strong>Phone:</strong> <a id="contact-phone"></a></p>
-          <p><strong>Email:</strong> <a id="contact-email"></a></p>
-          <h3>Business Hours</h3>
-          <ul id="contact-hours"></ul>
+                
+
+<div class="contact-grid">
+      <div class="contact-reachout">
+        <h3>How to reach out</h3>
+        <div><strong>Address:</strong> <span id="contact-address"></span></div>
+        <div><strong>Phone:</strong> <a id="contact-phone"></a></div>
+        <div><strong>Email:</strong> <a id="contact-email"></a></div>
+        <h3>Business Hours</h3>
+        <ul id="contact-hours"></ul>
+      </div>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form">
+        <h4>Please send us a message and our team will be happy to help you! </h4> 
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+        <p><label>Name <input type="text" name="name" required /></label></p>
+        <p><label>Email <input type="email" name="email" required /></label></p>
+        <p><label>Message <textarea name="message" rows="5" required></textarea></label></p>
+        <p><button class="rn-button" type="submit">Send</button></p>
+      </form>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </section>
         </div>
 
-        <!-- Netlify-ready form (no backend needed) -->
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/thank-you.html"
-        >
-          <!-- REQUIRED: this hidden input must match the form name -->
-          <input type="hidden" name="form-name" value="contact" />
 
-          <!-- Honeypot (spam protection) -->
-          <p class="hidden">
-            <label
-              >Don’t fill this out if you're human: <input name="bot-field"
-            /></label>
-          </p>
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="container">
+          <div class="row gtr-200">
+            <div class="col-12">
+							<h2 class="major"><span>Get in touch</span></h2>
+				<div class="row">
+					<div class="col-6"><!-- Contact -->
+						<section>
+							<ul class="contact">
+							<li>
+								<a class="icon brands fa-solid fa-facebook-f" href="#"
+								><span class="label">Facebook</span></a
+								>
+							</li>
+							<li>
+								<a class="icon brands fa-solid fa-twitter" href="#"
+								><span class="label">Twitter</span></a
+								>
+							</li>
+							<li>
+								<a class="icon brands fa-solid fa-instagram" href="#"
+								><span class="label">Instagram</span></a
+								>
+							</li>
+							<li>
+								<a class="icon brands fa-solid fa-dribbble" href="#"
+								><span class="label">Dribbble</span></a
+								>
+							</li>
+							<li>
+								<a class="icon brands fa-solid fa-linkedin-in" href="#"
+								><span class="label">LinkedIn</span></a
+								>
+							</li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-6">
+						<section class="icon-contact">
+							<div>
+								<span class=" fa-solid fa-home "></span>&nbsp;&nbsp;&nbsp;We serve the whole GTA!<br/>
+							</div>
+							<div>
+								<span class=" fa-solid fa-phone "></span>&nbsp;&nbsp;&nbsp;647 . 996 . 9999<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;647 . 345 . 8888<br/>
+							</div>
+							<div>
+								<span class=" fa-solid fa-envelope "></span>&nbsp;&nbsp;&nbsp;contact@readynest.ca
+							</div>
+						</section>
+					</div>
+				</div>
+              
+            </div>
+          </div>
 
-          <p>
-            <label>Name <input type="text" name="name" required /></label>
-          </p>
-          <p>
-            <label>Email <input type="email" name="email" required /></label>
-          </p>
-          <p>
-            <label
-              >Message <textarea name="message" rows="5" required></textarea>
-            </label>
-          </p>
-
-          <p><button class="btn" type="submit">Send</button></p>
-        </form>
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year"></span> ReadyNest</p>
-    </footer>
-
-    <script src="/assets/js/nav.js" defer></script>
-    <script src="/assets/js/content.js" defer></script>
-    <script>
-      window.__PAGE__ = "contact";
-    </script>
-  </body>
-</html>
+          <!-- Copyright -->
+		   <div id="copyright">
+            <ul class="menu">
+			  <li><div>© <span id="year"></span> ReadyNest cleaning</div></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      
+      
+  <script src="/assets/js/content.js" defer></script>
+  <script>window.__PAGE__ = "contact";</script>
+</body>
