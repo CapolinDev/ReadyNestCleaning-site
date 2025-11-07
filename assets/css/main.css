@@ -2016,7 +2016,7 @@ input, select, textarea {
 
 		 .special-icon a {
 				outline: 0;
-				color: #c1cac5;
+				color: #85b5ed; /* IAranda. Original was: #c1cac5; */
 			}
 
 			.special-icon a:before {
@@ -2026,7 +2026,7 @@ input, select, textarea {
 					transition: background-color .2s ease-in-out;
 					display: block;
 					text-align: center;
-					background: #c1cac5;	
+					background: #85b5ed;  /* IAranda. Original was: #c1cac5; */
 					border-radius: 100%;
 					width: 2.25em;
 					height: 2.25em;
@@ -2040,7 +2040,8 @@ input, select, textarea {
 			}
 
 				.special-icon:hover a:before {
-					background: rgba(133, 181, 237, 85%);	/* IAranda. Original was: #c1cac5*/
+					/*background: rgba(133, 181, 237, 85%);*/	/* IAranda. Original was: #c1cac5*/
+          background: #004294;
 				}
 
 /* Special */
@@ -2076,7 +2077,7 @@ input, select, textarea {
 					transition: background-color .2s ease-in-out;
 					display: block;
 					text-align: center;
-					background: #c1cac5;	
+					background: #c1cac5;
 					border-radius: 100%;
 					width: 2.25em;
 					height: 2.25em;
@@ -2332,6 +2333,7 @@ input, select, textarea {
 		border-style: solid;
 		border-width: 4px;
 		border-color: #c1cac5;
+    padding-bottom: 40px;
 	}
 
 		.package-box-h p {
@@ -2478,6 +2480,7 @@ input, select, textarea {
 		/*width: 450px;*/
 		text-align: left;
 		padding: 0 0 1em 10em;
+    color: #004294;
 	}
 
 /*
@@ -2567,7 +2570,7 @@ input, select, textarea {
 				color: #C1CAC5;
 			}
 
-			#header .logo img {				
+			#header .logo img {
 				max-width: 83px;
 			}
 
@@ -3263,7 +3266,7 @@ input, select, textarea {
 						font-size: 28px;
 					}
 
-			
+
 			.special-icon {
 					padding: 0.75em 0 0 0.75em;
 				}
@@ -3410,3 +3413,12 @@ button.btn{cursor:pointer}*/
 					color: #fff;
 					border-color: #616763;
 				}
+
+.cmshomefeatures-subtitle {
+    font-weight: bold;
+}
+
+.reachout-icon {
+  font-size: 22em;
+  padding: 115px 0 40px 0;
+}

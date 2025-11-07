@@ -10,18 +10,21 @@
 
   "cmshomefeatures": {
     "cleantitle": "Deep cleaning",
-    "cleantext":"Our Deep Cleaning service follows a detailed process that guarantees a high standard restult that goes beyond expectations. We use top market products that meet your particular needs and our personnel has the experience and knowledge that exceed our top QA standards.",
-  
+    "cleansubtitle": "Where Clean Meets Care.",
+    "cleantext":"At ReadyNest, we go beyond surface shine. Our deep cleaning restores every corner of your home to its healthiest, freshest state — because we know how much peace of mind comes from knowing your family's space is truly clean and safe.",
+
     "fixtitle": "Smart Fix",
-    "fixtext":"Our Smart Fix packages, hobbitses wonder five parasites later here's approaching shieldmaiden. I will take the Ring to Mordor. Instilled nothing's traitors Garulf minds happy grows playing encampment much. Bearing fabled Samwise Gamgee cracked. Shelob's 40 armour.",
-  
+    "fixsubtitle": "Small Fixes. Big Relief.",
+    "fixtext":"From leaky faucets to wall touch-ups, ReadyNest handles the details that often get overlooked. Our reliable, family-minded personnel treat every repair as part of your home's story — making sure everything works perfectly before you hand over the keys.",
+
     "alltitle": "All in one",
-    "alltext":"At ReadyNest we take care of everything so you don't have to. From your condo, house, office, school. Peasants swore aim feast Hobbit's crash? Fellas owe Bolgers forward vaults birdsong. Bilbo Baggins maggoty volley esquire?"
+    "allsubtitle": "One Team. Total Readiness.",
+    "alltext":"Moving or selling a home can be overwhelming. That's why ReadyNest brings cleaning and repairs together under one trusted service. One call, one team, one perfectly prepared property — so you can focus on what really matters: your next chapter."
   },
 
   "cmshomepack": {
-    "heading": "Now choose what works best for you!",
-    "subheading": "Have a look at our most popular packages",
+    "heading": "Have a look at our most popular packages",
+    "subheading": "Now select what best fits your situation",
     "description": "May the blessings of Elves and Men and all Free Folk go with you. Rhudaur tricks covering owes git listen avail life. Bone ain't divine heavier choking Ent.",
     "condotitle": "Condo",
     "condotasks": "- Broom <br/>- Mop<br/>- Wipe<br/>- Vaccum<br/>",
@@ -43,7 +46,7 @@
   "cmshomecontact": {
     "address": "We serve the whole GTA!",
     "phone": "647 . 996 . 9999  |  647 . 345 . 8888",
-    "email": "contact@readynest.ca"
+    "email": "contact@readynestcleaning.com"
   },
 
 

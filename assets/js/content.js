@@ -16,10 +16,13 @@
 
 
       setText("cmshomefeatures-cleantitle", data.cmshomefeatures?.cleantitle);
+      setText("cmshomefeatures-cleansubtitle", data.cmshomefeatures?.cleansubtitle);
       setText("cmshomefeatures-cleantext", data.cmshomefeatures?.cleantext);
       setText("cmshomefeatures-fixtitle", data.cmshomefeatures?.fixtitle);
+      setText("cmshomefeatures-fixsubtitle", data.cmshomefeatures?.fixsubtitle);
       setText("cmshomefeatures-fixtext", data.cmshomefeatures?.fixtext);
       setText("cmshomefeatures-alltitle", data.cmshomefeatures?.alltitle);
+      setText("cmshomefeatures-allsubtitle", data.cmshomefeatures?.allsubtitle);
       setText("cmshomefeatures-alltext", data.cmshomefeatures?.alltext);
 
 
