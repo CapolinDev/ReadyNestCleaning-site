@@ -62,9 +62,52 @@
         <p class="hidden">
           <label>Don't fill this out if you're human: <input name="bot-field" /></label>
         </p>
-        <p><label>Name <input type="text" name="name" required /></label></p>
-        <p><label>Email <input type="email" name="email" required /></label></p>
-        <p><label>Message. Please indicate Property Type, size & Layout <textarea name="message" rows="5" required></textarea></label></p>
+        <p><label>* Name <input type="text" name="name" required /></label></p>
+        <p><label>* Email <input type="email" name="email" required /></label></p>
+        <div class="contact-property-type-section">
+          <div>* Property Type</div>
+          <input type="radio" id="basement" name="property-type" value="Basement" required >
+          <label for="basement">Basement</label>
+          <input type="radio" id="condo" name="property-type" value="Condo">
+          <label for="condo">Condo</label>
+          <input type="radio" id="house" name="property-type" value="House">
+          <label for="house">House</label>
+          <input type="radio" id="office" name="property-type" value="Office">
+          <label for="office">Office</label>
+          <input type="radio" id="school" name="property-type" value="School">
+          <label for="school">School</label>
+        </div>
+        <div class="contact-bundle-section">
+          <div>* Bundle Type</div>
+          <input type="radio" id="bundle-plus" name="bundle" value="bundle-plus" required >
+          <label for="bundle-plus">Plus</label>
+          <input type="radio" id="bundle-premium" name="bundle" value="bundle-premium">
+          <label for="bundle-premium">Premium</label>
+          <input type="radio" id="bundle-ultimate" name="bundle" value="bundle-ultimate">
+          <label for="bundle-ultimate">Ultimate</label>
+        </div>
+        <div class="contact-options-section">
+          <div>* Basic options</div>
+          <div class="row">
+            <div class="col-6">
+              <input type="number" name="bedrooms" value=""class="contact-input-number" required >
+              <label for="bedrooms">Bedrooms</label><br>
+              <input type="number" name="bathrooms" value=""class="contact-input-number" required >
+              <label for="bathrooms">Bathrooms</label>
+            </div>
+            <div class="col-6">
+              <input type="number" name="levels" value=""class="contact-input-number" required >
+              <label for="levels">Stories/Levels</label><br>
+              <input type="number" name="stairs" value=""class="contact-input-number" required >
+              <label for="stairs">Stairs</label>
+            </div>
+          </div>
+        </div>
+        <div class="contact-sqft-section">
+          <input type="text" id="square-footage" name="square-footage" value="" class="contact-input-sqft" required />
+          <label for="square-footage" >Aprox. Square Footage </label>
+        </div>
+        <p><label>Message<textarea name="message" rows="5" required></textarea></label></p>
         <div data-netlify-recaptcha="true"></div>
         <p><button class="rn-button" type="submit">Send</button></p>
       </form>

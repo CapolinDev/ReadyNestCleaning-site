@@ -3739,8 +3739,45 @@ button.btn{cursor:pointer}*/
 	color: #66686b; /* #f1f3f7 */
 }
 
+.contact-property-type-section label {
+  display: inline-flex;
+}
+.contact-property-type-section input {
+  appearance: auto;
+}
 
+.contact-bundle-section label {
+  display: inline-flex;
+}
+.contact-bundle-section input {
+  appearance: auto;
+}
 
+.contact-options-section label {
+  display: inline-flex;
+}
+
+.contact-sqft-section label {
+  display: inline-flex;
+}
+.contact-sqft-section input {
+  display: inline-flex !important;
+  appearance: auto;
+}
+
+.contact-input-number {
+  width: 80px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  border-color: #E7EAE8;
+  padding: 0 1em;
+}
+
+.contact-input-sqft {
+  width: 100px !important;
+  line-height: 1.75em !important;
+}
 
 
 
