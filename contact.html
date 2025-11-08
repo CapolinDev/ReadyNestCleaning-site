@@ -56,7 +56,7 @@
           <i class="icon fa-solid fa-envelopes-bulk reachout-icon"></i>
       </div>
 
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form" data-netlify-recaptcha="true">
         <h4>Please send us a message and our team will be happy to help you! </h4>
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden">
@@ -65,11 +65,11 @@
         <p><label>Name <input type="text" name="name" required /></label></p>
         <p><label>Email <input type="email" name="email" required /></label></p>
         <p><label>Message. Please indicate Property Type, size & Layout <textarea name="message" rows="5" required></textarea></label></p>
+        <div data-netlify-recaptcha="true"></div>
         <p><button class="rn-button" type="submit">Send</button></p>
       </form>
     </div>
   </main>
-
 
 
 
