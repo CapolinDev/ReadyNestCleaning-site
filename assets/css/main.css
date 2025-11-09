@@ -201,6 +201,14 @@ input, select, textarea {
 		padding-bottom: 10em;
 	}
 
+
+  /* IAranda. 20251108 */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff; /* ensure content doesn’t bleed under */
+}
 /* Section/Article */
 
 	section, article {
@@ -223,8 +231,10 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		max-width: 100%;
-		width: 64em;
+    width: calc(100% - 40px);
+    max-width: 100%;
+		/*max-width: 100%;
+		width: 64em;*/
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1746,6 +1756,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+      height: auto;
 			border-radius: 8px;
 		}
 
@@ -2010,7 +2021,7 @@ input, select, textarea {
 			position: relative;
 			display: inline-block;
 			top: 0;
-			padding: 2em 8em 0 0;	/* IAranda. Original was: 2em 0 0 2em */
+			padding: 2em 1.5em 0 0;	/* IAranda. Original was: 2em 0 0 2em */
 
 			outline: 0;
 		}
@@ -2578,6 +2589,7 @@ input, select, textarea {
 
 			#header .logo img {
 				max-width: 83px;
+        height: auto;
 			}
 
 /* Nav */
@@ -3375,11 +3387,36 @@ input, select, textarea {
 
 .contact-grid{display:grid;gap:24px;grid-template-columns:1fr;}
 @media (min-width: 760px){ .contact-grid{grid-template-columns:1fr 1fr} }
+
+@media (max-width: 768px) {
+  .reachout-icon { font-size: 4.5rem; padding: 2rem 0 1rem 0; }
+  .special-icon { padding-right: 1rem; margin-left: 0; }
+  .feature-icon .icon,
+  .special-icon a:before {
+    font-size: 3rem;
+    width: 3.25em;
+    height: 3.25em;
+    line-height: 3.25em;
+  }
+  /*.reachout-icon {
+    font-size: 6rem;
+    padding: 3rem 0 1.5rem 0;
+  }*/
+
+  /*.special-icon a:before,
+  .feature-icon .icon {
+    font-size: 3rem;
+    width: 3.25em;
+    height: 3.25em;
+    line-height: 3.25em;
+  }*/
+}
+
 /*form p{margin:0 0 14px}
 input, textarea{width:100%;padding:10px;border:1px solid var(--border);border-radius:10px;background:var(--surface)}
 button.btn{cursor:pointer}*/
 .contact-reachout {
-	text-align: left;
+	text-align: center;
 }
 
 .contact-form {
@@ -3425,8 +3462,10 @@ button.btn{cursor:pointer}*/
 }
 
 .reachout-icon {
-  font-size: 22em;
-  padding: 115px 0 40px 0;
+  /* font-size: 22em;
+  padding: 115px 0 40px 0;  */
+  font-size: 6rem; /* cap very large values (was ~22em) */
+    padding: 3rem 0 1.5rem 0;
 }
 
 
@@ -3479,7 +3518,7 @@ button.btn{cursor:pointer}*/
 .tab__content {
     display: none;
 	 text-align: center;
-    width:1080%;
+    width:100%;
 	 margin: 0 auto;
     box-sizing: border-box;
     background-color:#ffffff;
@@ -3766,12 +3805,12 @@ button.btn{cursor:pointer}*/
 }
 
 .contact-input-number {
-  width: 80px;
+  width: 62px;
   border-style: solid;
   border-width: 2px;
   border-radius: 8px;
   border-color: #E7EAE8;
-  padding: 0 1em;
+  padding: 0 0.5em;
 }
 
 .contact-input-sqft {
@@ -3781,6 +3820,162 @@ button.btn{cursor:pointer}*/
 
 
 
+/*    CSS Fixes    */
+
+
+/* Mobile title bar logo fix */
+#titleBar .title img {
+  height: 32px;         /* scale the logo in the mobile title bar */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Ensure title bar has a predictable height */
+#titleBar {
+  height: 56px;
+  line-height: 56px;    /* vertically centers the logo/text */
+}
+
+/* Keep page content from sliding under the fixed title bar on small screens */
+@media (max-width: 736px) {
+  body { padding-top: 56px; }
+}
+
+
+/* Step 2: Better text & spacing for mobile */
+@media (max-width: 768px) {
+
+  h1, h2, h3 {
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: 1.75rem;   /* ~28px, comfortable for mobile */
+  }
+
+  h2 {
+    font-size: 1.4rem;    /* ~22px */
+  }
+
+  h3 {
+    font-size: 1.15rem;   /* ~18px */
+  }
+
+  /* Reduce section vertical padding for mobile */
+  section, .section {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  /* Make button text more balanced on phones */
+  .button, button, input[type="submit"] {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+
+/* Mobile header/logo fix */
+@media (max-width: 768px) {
+  #header .logo {
+    float: none;        /* stop left float so it doesn’t overlay */
+    z-index: 1;         /* lower stacking so it can’t sit above content */
+  }
+  #header .logo img {
+    max-height: 48px;   /* cap the visual size on phones */
+    height: auto;
+    width: auto;
+  }
+}
+
+/* Step 3: Improve content width on mobile */
+@media (max-width: 768px) {
+
+  .inner,
+  .wrapper,
+  .container,
+  section .inner {
+    max-width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+  }
+
+  /* Prevent horizontal scrolling caused by large images or elements */
+  body {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+
+/* Step: Hero layout adjust for mobile */
+@media (max-width: 768px) {
+  .hero,
+  #banner,
+  header.major,
+  .intro {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: auto;  /* prevent full-screen forced height */
+  }
+
+  /* If your hero has a large headline */
+  .hero h1,
+  #banner h1,
+  .intro h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+  }
+
+  /* Keep hero paragraph text from stretching too wide */
+  .hero p,
+  #banner p,
+  .intro p {
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+
+/* Step: Service cards spacing and layout on mobile */
+@media (max-width: 768px) {
+
+  /* Make each service item stack cleanly */
+  .features article,
+  .service,
+  .service-item {
+    margin-bottom: 1.75rem;
+  }
+
+  /* Ensure icons / images scale and align */
+  .features article img,
+  .service img,
+  .service-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+
+  /* Reduce overly large gaps between text lines */
+  .features article p,
+  .service p,
+  .service-item p {
+    line-height: 1.45;
+  }
+}
 
 
 
@@ -3790,6 +3985,174 @@ button.btn{cursor:pointer}*/
 
 
 
+/* Step: Contact form mobile layout improvements */
+@media (max-width: 768px) {
+
+  /* Make form fields take full width */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea,
+  form select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* More comfortable spacing between inputs */
+  form input,
+  form textarea,
+  form select {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  /* Prevent textarea from being too short or too tall */
+  form textarea {
+    min-height: 120px;
+  }
+
+  /* Center and size the submit button */
+  form input[type="submit"],
+  button[type="submit"] {
+    width: 100%;             /* full width button for easier tap */
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+}
+
+
+
+
+
+/* Step: Footer spacing and readability on mobile */
+@media (max-width: 768px) {
+
+  #footer, footer, .footer {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  #footer p,
+  footer p,
+  .footer p {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    margin-bottom: 0.75rem;
+  }
+
+  #footer a,
+  footer a,
+  .footer a {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+
+/* Footer mobile fix: remove oversized left padding */
+@media screen and (max-width: 736px) {
+  .icon-contact {
+    padding: 0 0 1em 0 !important;
+    text-align: center; /* optional: centers the line with the icon */
+  }
+}
+
+
+
+
+
+/* Footer layout fix for mobile */
+@media screen and (max-width: 736px) {
+
+  /* Make both footer columns full width */
+  .footer-column,
+  .contact,
+  .info {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Make the icons and text center-aligned */
+  .footer-column .icon,
+  .contact .icon,
+  .info .icon {
+    margin: 0 auto 0.75rem auto;
+    display: inline-block;
+  }
+
+  /* Ensure text doesn't overflow the screen */
+  .footer-column p,
+  .contact p,
+  .info p {
+    margin: 0 auto;
+    max-width: 20rem;
+  }
+}
+
+/* Footer mobile fix: make the two columns stack */
+@media (max-width: 768px) {
+  #footer .row > .col-6 {
+    width: 100% !important; /* force 1 column per row */
+  }
+  #footer .row {
+    gap: 12px;               /* small spacing between stacked blocks */
+  }
+  #footer .icon-contact > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;                 /* tidy spacing between icon and text */
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Footer visual polish */
+@media (max-width: 768px) {
+
+  /* Center the text under each icon cleanly */
+  #footer .icon-contact,
+  #footer .icon-home {
+    text-align: center;
+  }
+
+  /* Make sure icons are the same size across blocks */
+  #footer .icon {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+  /* Tighten text so it doesn't feel too loose now that it's stacked */
+  #footer p {
+    margin: 0.25rem auto;
+    line-height: 1.45;
+    max-width: 18rem;
+  }
+}
+
+
+
+
+
+/* Step: More comfortable mobile navigation tap targets */
+@media (max-width: 768px) {
+  #nav a,
+  #nav span {
+    padding: 0.85rem 1rem;     /* slightly larger hit area */
+    line-height: 1.35;
+    display: inline-block;
+  }
+}
 
 
 
@@ -3798,14 +4161,51 @@ button.btn{cursor:pointer}*/
 
 
 
+:root {
+  --rn-icon-d: 5.5rem;
+  --rn-glyph: 2.4rem;
+}
+
+.special-icon {
+  margin: 1.5rem 0 1rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.special-icon .icon{
+  inline-size: 8.25rem;
+  block-size: 8.25rem;
+}
 
 
+.special-icon a {
+  display: grid;
+  place-items: center;
+  width: var(--rn-icon-d);
+  height: var(--rn-icon-d);
+  text-decoration: none;
+}
 
 
+.special-icon a::before {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: 100% !important;
+  line-height: 1 !important;
+  border-radius: 50% !important;
+  font-size: var(--rn-glyph) !important;
+  background: #85b5ed;
+  color: #fff;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
-
-
-
+@media (min-width: 768px) {
+  :root { --rn-icon-d: 6rem; --rn-glyph: 5.6rem; }
+}
 
 
 

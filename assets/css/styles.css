@@ -48,3 +48,63 @@ button.btn{cursor:pointer}
 
 .cta-banner{margin:28px 0;padding:18px;border:1px dashed var(--primary);border-radius:14px;background:#eff6ff}
 .footer{border-top:1px solid var(--border);padding:18px 0;color:var(--muted);background:var(--surface)}
+
+
+
+/*
+/ * Center the home "special-icon" circles and glyphs * /
+.box.feature .special-icon {
+  margin: 1rem 0 2rem 0;
+  padding: 0;
+  position: static;
+  display: flex;
+  justify-content: center;
+}
+
+.box.feature .special-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.box.feature .special-icon a:before {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+/ * ReadyNest: center and circle the package icons * /
+.special-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 1rem 0 2rem;
+  position: static;
+}
+
+.special-icon a.icon {
+  / * make the container itself the circle, not the ::before * /
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background: #85b5ed;
+  color: #fff !important;
+  text-decoration: none;
+  position: static;
+}
+
+/ * keep the Font Awesome glyph centered, avoid stretching * /
+.special-icon a.icon::before {
+  line-height: 1;
+  font-size: 1.6rem;
+}
+*/
